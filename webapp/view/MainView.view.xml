@@ -1,0 +1,22 @@
+<mvc:View
+  controllerName="appgenform.controller.MainView"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m">
+  <Page title="{i18n>appTitle}">
+    <content>
+      <Panel headerText="Sélectionner les paramètres">
+        <VBox class="sapUiSmallMargin">
+          <Label text="(p_accdoc)" labelFor="inpAccDoc"/>
+          <Input id="inpAccDoc" value="{/p_accdoc}" width="300px"/>
+          
+          <Label text="(p_com)" labelFor="inpCom"/>
+          <Input id="inpCom" value="{/p_com}" width="300px"/>
+
+          
+          
+          <Button text="Générer PDF" type="Emphasized" press=".onGeneratePdf"/>
+        </VBox>
+      </Panel>
+    </content>
+  </Page>
+</mvc:View>
